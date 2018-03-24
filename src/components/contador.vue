@@ -30,12 +30,11 @@ export default {
   },
   computed: {
     parOuImpar() {
-      if (this.valor %2 == 0) {
-        return "Par"
+      if (this.valor % 2 === 0) {
+        return 'Par';
       }
-      else {
-        return "Impar"
-      }
+
+      return 'Impar';
     },
   },
   methods: {
@@ -46,8 +45,8 @@ export default {
       this.valor -= parseInt(this.entrada, 10);
     },
     zerarValor() {
-      this.valor = 0
-    }
+      this.valor = 0;
+    },
   },
 };
 </script>
